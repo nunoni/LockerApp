@@ -1,0 +1,16 @@
+# Build output
+/locker
+
+# Local agent session data (contains plaintext API keys and logs) — never commit
+.crush/
+
+# Local vault files (the real vault lives in ~/.config/locker/)
+vault.json
+vault.json.lock
+vault.json.tmp
+.locker-vault-*.tmp
+
+# Environment files that may hold secrets
+.env
+.env.*
+!.env.example
